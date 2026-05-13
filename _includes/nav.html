@@ -1,13 +1,18 @@
-<nav class="nav">
+<nav class="site-nav" id="site-nav">
   <div class="nav-inner">
-    <a href="{{ '/' | relative_url }}" class="nav-brand">
-      <span class="dot"></span>
-      <span>GOOD<span class="serif-italic" style="color: var(--amber); margin-left: 2px;">.</span></span>
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="logo-bracket">[</span>GOOD<span class="logo-bracket">]</span>
     </a>
     <ul class="nav-links">
-      {% for item in site.nav %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-      {% endfor %}
+      <li><a href="#about">About</a></li>
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="https://github.com/tudat-team/" target="_blank" class="nav-cta">Tudat ↗</a></li>
     </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>

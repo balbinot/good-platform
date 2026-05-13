@@ -1,41 +1,36 @@
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-mark">The GOOD Platform</div>
-        <p>
-          A 36-month open-science infrastructure project combining open-source astrodynamics
-          with rigorous data lineage — for planetary science, space situational awareness,
-          and planetary defense.
-        </p>
-        <p style="margin-top: 1rem;">
-          Funded under {{ site.project.call }}.
-        </p>
-      </div>
-
-      <div>
-        <h4>Navigation</h4>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-bracket">[</span>GOOD<span class="logo-bracket">]</span>
+      <p>General Open Orbital Dynamics Platform</p>
+      <p class="footer-sub">Funded by Open Science NL · 2024–2027</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Institutions</h4>
         <ul>
-          {% for item in site.nav %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-          {% endfor %}
+          <li><a href="https://www.tudelft.nl" target="_blank">TU Delft</a></li>
+          <li><a href="https://www.rug.nl" target="_blank">University of Groningen</a></li>
+          <li><a href="https://www.universiteitleiden.nl" target="_blank">Leiden University</a></li>
         </ul>
       </div>
-
-      <div>
-        <h4>Related software</h4>
+      <div class="footer-col">
+        <h4>Software</h4>
         <ul>
-          <li><a href="https://github.com/tudat-team/" target="_blank" rel="noopener">Tudat on GitHub</a></li>
-          <li><a href="https://docs.tudat.space/en/latest/" target="_blank" rel="noopener">Tudat documentation</a></li>
-          <li><a href="https://www.astro-wise.org/" target="_blank" rel="noopener">Astro-WISE</a></li>
-          <li><a href="https://www.omegacen.rug.nl/" target="_blank" rel="noopener">OmegaCEN ASDC</a></li>
+          <li><a href="https://github.com/tudat-team/" target="_blank">Tudat on GitHub ↗</a></li>
+          <li><a href="https://docs.tudat.space/en/latest/" target="_blank">Tudat Docs ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:d.dirkx@tudelft.nl">d.dirkx@tudelft.nl</a></li>
+          <li><a href="mailto:g.a.verdoes.kleijn@rug.nl">g.a.verdoes.kleijn@rug.nl</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <span>© {{ 'now' | date: '%Y' }} GOOD Platform Consortium</span>
-      <span>TU Delft × University of Groningen</span>
-    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Open Science Infrastructure 2024 · GPL-licensed · FAIR &amp; Open</p>
   </div>
 </footer>

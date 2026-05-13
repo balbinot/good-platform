@@ -1,63 +1,22 @@
-# Site settings
-title: "GOOD Platform"
-tagline: "The General Open Orbital Dynamics Platform"
-description: >-
-  An open-science infrastructure combining the Tudat astrodynamics toolbox with
-  WISE data-handling technology to enable fully transparent, reproducible orbital
-  dynamics research across planetary science, space situational awareness, and
-  planetary defense.
-author: "GOOD Platform Consortium"
-email: d.dirkx@tudelft.nl
+title: GOOD Platform
+description: The General Open Orbital Dynamics Platform — Open, FAIR, and reproducible orbital dynamics for the global scientific community.
 baseurl: ""
 url: ""
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
-
-sass:
-  style: compressed
-  sass_dir: _sass
-
+theme: null
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-feed
 
+# Collections
+collections:
+  team:
+    output: false
+
+# Exclude
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-# Project metadata
-project:
-  duration_months: 36
-  budget: "€1.5M"
-  budget_full: "€1,499,820"
-  developers: 5
-  call: "Open Science NL — Open Science Infrastructure 2024 (Large)"
-  lead_institution: "Delft University of Technology"
-  partner_institution: "University of Groningen"
-
-# Navigation
-nav:
-  - title: "Overview"
-    url: "/#overview"
-  - title: "Vision"
-    url: "/#vision"
-  - title: "Timeline"
-    url: "/timeline/"
-  - title: "Team"
-    url: "/team/"
-  - title: "About"
-    url: "/about/"

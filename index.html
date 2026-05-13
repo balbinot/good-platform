@@ -1,271 +1,523 @@
 ---
 layout: default
-title: "Home"
-description: "The General Open Orbital Dynamics platform — open-source astrodynamics meets rigorous data lineage."
+title: Home
+description: The General Open Orbital Dynamics (GOOD) Platform — Open, FAIR, and reproducible orbital dynamics infrastructure for the global scientific community.
 ---
 
-<section class="hero" id="overview">
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="home">
   <div class="hero-orbit" aria-hidden="true">
-    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" stroke="#0a1628" stroke-width="0.6">
-        <ellipse cx="300" cy="300" rx="280" ry="100" />
-        <ellipse cx="300" cy="300" rx="220" ry="160" transform="rotate(30 300 300)" />
-        <ellipse cx="300" cy="300" rx="180" ry="220" transform="rotate(60 300 300)" />
-        <ellipse cx="300" cy="300" rx="140" ry="260" transform="rotate(90 300 300)" />
-        <circle cx="300" cy="300" r="6" fill="#d97706" stroke="none" />
-        <circle cx="580" cy="300" r="3" fill="#0a1628" stroke="none" />
-        <circle cx="430" cy="430" r="2.5" fill="#0a1628" stroke="none" />
-        <circle cx="300" cy="80" r="3.5" fill="#b91c1c" stroke="none" />
-        <circle cx="140" cy="490" r="2" fill="#0a1628" stroke="none" />
-      </g>
-    </svg>
+    <div class="orbit-ring">
+      <div class="orbit-dot"></div>
+    </div>
+    <div class="orbit-ring">
+      <div class="orbit-dot orbit-dot-2"></div>
+    </div>
+    <div class="orbit-ring">
+      <div class="orbit-dot orbit-dot-3"></div>
+    </div>
   </div>
 
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <span class="eyebrow">Open Science NL · Infrastructure 2024</span>
-        <h1>
-          The <span class="accent">General Open</span><br>
-          Orbital Dynamics<br>
-          Platform.
-        </h1>
-        <p class="hero-tag">
-          Combining the Tudat astrodynamics toolbox with WISE data-handling
-          technology — for fully transparent, reproducible orbital analysis.
-        </p>
+  <div class="hero-content">
+    <div class="hero-tag">Open Science Infrastructure 2024</div>
+    <h1 class="hero-title">
+      General <span class="accent">Open</span><br>
+      Orbital <span class="accent-2">Dynamics</span><br>
+      Platform
+    </h1>
+    <p class="hero-sub">
+      Combining Tudat's open-source astrodynamics with WISE-based scalable data management to enable fully transparent, reproducible orbital analysis — for everyone.
+    </p>
+    <div class="hero-actions">
+      <a href="#about" class="btn btn-primary">Learn More ↓</a>
+      <a href="https://github.com/tudat-team/" target="_blank" class="btn btn-secondary">Tudat on GitHub ↗</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-value">€<span>1.5M</span></div>
+        <div class="stat-label">Total Budget</div>
       </div>
+      <div class="stat-item">
+        <div class="stat-value"><span>36</span> mo</div>
+        <div class="stat-label">Project Duration</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value"><span>5</span></div>
+        <div class="stat-label">Developers Hired</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value"><span>12+</span></div>
+        <div class="stat-label">Partner Orgs</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <dl class="hero-meta">
-        <div>
-          <dt>Duration</dt>
-          <dd>{{ site.project.duration_months }} months</dd>
+<!-- ======================== ABOUT ======================== -->
+<section class="section about-section" id="about">
+  <div class="section-inner">
+    <div class="section-label">The Challenge</div>
+    <h2 class="section-title">Orbital dynamics is powerful<br>but fragmented</h2>
+    <p class="section-lead">Critical tools for orbit estimation and prediction are generally closed-source, fragmented, or domain-specific — inaccessible to the broader scientific community.</p>
+
+    <div class="about-grid">
+      <div>
+        <div class="problem-list">
+          <div class="problem-item reveal">
+            <div class="problem-icon">⚡</div>
+            <div>
+              <h4>Conflicting findings hard to resolve</h4>
+              <p>Without open algorithms and data, discrepancies across studies cannot be traced or corrected by the community.</p>
+            </div>
+          </div>
+          <div class="problem-item reveal">
+            <div class="problem-icon">🔒</div>
+            <div>
+              <h4>Unexpected results hard to validate</h4>
+              <p>Closed platforms prevent independent verification of key results in planetary science and space safety.</p>
+            </div>
+          </div>
+          <div class="problem-item reveal">
+            <div class="problem-icon">🧩</div>
+            <div>
+              <h4>Cross-domain collaboration hindered</h4>
+              <p>Domain-specific tools block knowledge transfer between SSA, planetary science, and fundamental physics.</p>
+            </div>
+          </div>
+          <div class="problem-item reveal">
+            <div class="problem-icon">🚀</div>
+            <div>
+              <h4>Growing urgency</h4>
+              <p>Crowded near-Earth orbits, new planetary missions (JUICE, Euclid, LSST), and asteroid threat monitoring all demand open, scalable solutions now.</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <dt>Budget</dt>
-          <dd>{{ site.project.budget }}</dd>
+      </div>
+
+      <div class="solution-card reveal">
+        <h3>The GOOD Solution</h3>
+        <div class="solution-feature">
+          <span class="feature-num">i.a</span>
+          <p><strong>Run &amp; archive</strong> new user-defined orbital analyses with standardized, version-controlled configurations</p>
         </div>
-        <div>
-          <dt>Lead</dt>
-          <dd>TU Delft</dd>
+        <div class="solution-feature">
+          <span class="feature-num">i.b</span>
+          <p><strong>Platform-executed analyses</strong> — no local HPC required, accessible to researchers without large compute resources</p>
         </div>
-        <div>
-          <dt>Partner</dt>
-          <dd>RU Groningen</dd>
+        <div class="solution-feature">
+          <span class="feature-num">ii</span>
+          <p><strong>Retrieve existing analyses</strong> with full reproducibility — every result traceable back to its input data and model configuration</p>
         </div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<section class="stats">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-value">4</div>
-        <div class="stat-label">Work packages</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">5</div>
-        <div class="stat-label">Dedicated developers</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">12+</div>
-        <div class="stat-label">Cooperation partners</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">3</div>
-        <div class="stat-label">Application domains</div>
+        <div class="solution-feature">
+          <span class="feature-num">iii</span>
+          <p><strong>Auto-generate configurations</strong> for new analyses based on target body, accuracy requirements, and available datasets</p>
+        </div>
+        <div class="solution-feature">
+          <span class="feature-num">iv</span>
+          <p><strong>Automatic updates</strong> — archived analyses are refreshed when new data or software improvements become available</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="vision">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <span class="label">01 — Vision</span>
-      </div>
-      <div>
-        <h2>A paradigm shift toward<br><span class="serif-italic">open, reproducible</span> orbital analysis.</h2>
-        <p class="section-lead">
-          The GOOD platform transforms orbital dynamics from a closed field of fragmented,
-          domain-specific tools into an accessible, collaborative effort — supporting
-          professional scientists, engineers, and citizen scientists alike.
-        </p>
-      </div>
-    </div>
+<!-- ======================== PLATFORM ======================== -->
+<section class="section platform-section" id="platform">
+  <div class="section-inner">
+    <div class="section-label">Work Packages</div>
+    <h2 class="section-title">Four work packages,<br>one open platform</h2>
+    <p class="section-lead">The GOOD platform is built through tightly coordinated development streams, each staffed by dedicated developers and supported by the co-applicant team.</p>
 
-    <div class="pillars reveal">
-      <div class="pillar">
-        <div class="pillar-num">i.</div>
-        <h3>Run &amp; archive</h3>
-        <p>Execute new analyses on the platform — locally or via hosted compute — then validate and store them with full provenance.</p>
+    <div class="platform-grid">
+      <div class="wp-card reveal" data-accent="sky">
+        <div class="wp-number">WP1</div>
+        <h3 class="wp-title">Tudat Core Development</h3>
+        <p class="wp-desc">Develop a standardized configuration layer for Tudat (JSON/XML), replacing bespoke Python scripts. Implements configuration auto-generation from user inputs, and adapts Tudat's architecture for platform integration.</p>
+        <div class="wp-tags">
+          <span class="tag">Configuration Layer</span>
+          <span class="tag">Auto-generation</span>
+          <span class="tag">C++ / Python</span>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">ii.</div>
-        <h3>Retrieve, reproducibly</h3>
-        <p>Pull existing analyses back — every input, configuration, and output reconstructable from persistent identifiers.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">iii.</div>
-        <h3>Auto-configure</h3>
-        <p>Generate skeleton analysis configurations from a few user inputs: target body, model accuracy, required datasets.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">iv.</div>
-        <h3>Stay current</h3>
-        <p>Archived analyses update automatically as new data and functionality become available — no user action needed.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <span class="label">02 — Why now</span>
+      <div class="wp-card reveal" data-accent="aurora">
+        <div class="wp-number">WP2</div>
+        <h3 class="wp-title">GOOD-WISE Core Development</h3>
+        <p class="wp-desc">Adapts WISE astronomical data-handling technology from sky surveys to solar system use. Develops data models, workflows, and databases for both spacecraft (WP2-2) and natural bodies (WP2-3) with full data lineage.</p>
+        <div class="wp-tags">
+          <span class="tag">Data Lineage</span>
+          <span class="tag">WISE Tech</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
       </div>
-      <div>
-        <h2>Closed tools, <span class="serif-italic">growing data</span>, urgent questions.</h2>
-        <p class="section-lead">
-          Orbital dynamics underpins planetary interior modelling, fundamental-physics tests,
-          spacecraft operations, and planetary defense. Yet the tools to do it are largely
-          closed-source — and the data is multiplying.
-        </p>
-      </div>
-    </div>
 
-    <div class="challenge-grid reveal">
-      <div class="challenge-block problem">
-        <h3>The problem</h3>
-        <ul>
-          <li><strong>Conflicting findings</strong> are difficult to resolve when underlying code is opaque.</li>
-          <li><strong>Unexpected results</strong> can't be independently validated by the broader community.</li>
-          <li><strong>Cross-domain collaboration</strong> is hindered by fragmented, domain-specific tools.</li>
-          <li><strong>Innovation is restricted</strong> by limited access to high-fidelity infrastructure.</li>
-        </ul>
+      <div class="wp-card reveal" data-accent="warn">
+        <div class="wp-number">WP3-1</div>
+        <h3 class="wp-title">Near-Earth SSA</h3>
+        <p class="wp-desc">Application-focused development for Space Situational Awareness. Improves astrometry bias characterization, automates uncertainty propagation for sensor scheduling, and integrates near-Earth object tracking data.</p>
+        <div class="wp-tags">
+          <span class="tag">SSA</span>
+          <span class="tag">Uncertainty Prop.</span>
+          <span class="tag">Debris Orbits</span>
+        </div>
       </div>
-      <div class="challenge-block solution">
-        <h3>What's driving urgency</h3>
-        <ul>
-          <li><strong>Crowded near-Earth orbit</strong> demands FAIR, standardized space situational awareness.</li>
-          <li><strong>Planetary mission quantity &amp; quality</strong> require consistent fusion of multi-mission data.</li>
-          <li><strong>Asteroid data diversity</strong> from Gaia, LSST, Euclid, JWST and orbiters demands interoperable models.</li>
-          <li><strong>Strategic autonomy</strong> in Europe needs open alternatives to closed, centralised systems.</li>
-        </ul>
+
+      <div class="wp-card reveal" data-accent="orbit">
+        <div class="wp-number">WP3-2</div>
+        <h3 class="wp-title">Solar System Dynamics</h3>
+        <p class="wp-desc">Large-scale astrometric analysis linking survey data (Gaia, LSST, Euclid, JWST) with orbital estimation. Extracts asteroid tracks from archival surveys and supports planetary interior and evolution science.</p>
+        <div class="wp-tags">
+          <span class="tag">Astrometry</span>
+          <span class="tag">Planetary Science</span>
+          <span class="tag">Survey Integration</span>
+        </div>
+      </div>
+
+      <div class="wp-card reveal" data-accent="sky">
+        <div class="wp-number">WP3-3</div>
+        <h3 class="wp-title">Spacecraft Radio Tracking</h3>
+        <p class="wp-desc">Implements mission-specific background models (atmosphere, radiation pressure, gravity variation) and automates data retrieval pipelines. Covers missions including Cassini, JUICE, Rosetta, and Mars Express.</p>
+        <div class="wp-tags">
+          <span class="tag">Radio Science</span>
+          <span class="tag">JUICE / PRIDE</span>
+          <span class="tag">Mission Data</span>
+        </div>
+      </div>
+
+      <div class="wp-card reveal" data-accent="star">
+        <div class="wp-number">WP4</div>
+        <h3 class="wp-title">Dissemination &amp; Governance</h3>
+        <p class="wp-desc">Establishes governance structure (steering committee + advisory board), community outreach, documentation, workshops, and a national symposium. Ensures long-term sustainability and community ownership.</p>
+        <div class="wp-tags">
+          <span class="tag">Open Governance</span>
+          <span class="tag">Community</span>
+          <span class="tag">Documentation</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <span class="label">03 — How it works</span>
-      </div>
-      <div>
-        <h2>Two proven systems,<br><span class="serif-italic">one open platform.</span></h2>
-        <p class="section-lead">
-          GOOD brings together Tudat's high-fidelity orbit propagation and estimation
-          with WISE's mature, lineage-preserving data infrastructure.
-        </p>
+<!-- ======================== TIMELINE ======================== -->
+<section class="section timeline-section" id="timeline">
+  <div class="section-inner">
+    <div class="section-label">Project Milestones</div>
+    <h2 class="section-title">Three-year development roadmap</h2>
+    <p class="section-lead">From kick-off to full platform launch, GOOD develops iteratively with community checkpoints at each phase boundary.</p>
+
+    <div class="timeline reveal">
+      <div class="timeline-months" style="margin-top: 1rem;">
+
+        <!-- Phase 1: Months 1–12 -->
+        <div class="timeline-col">
+          <div class="timeline-col-header">⬡ Phase I — Months 1–12</div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4</div>
+              <div class="milestone-name">🚀 Kick-off Meeting (KO)</div>
+              <div class="milestone-desc">Open community event to shape scope &amp; priorities</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP1 · M1-0</div>
+              <div class="milestone-name">Tudat Configuration Scope</div>
+              <div class="milestone-desc">Define implementation scope for configuration layer</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-0</div>
+              <div class="milestone-name">GOOD-WISE Scope Definition</div>
+              <div class="milestone-desc">Coordinate with WP1 on integration architecture</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP3 · M3-0</div>
+              <div class="milestone-name">Application Scope Definition</div>
+              <div class="milestone-desc">Define scope for all three application WPs</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP1 · M1-1a</div>
+              <div class="milestone-name">Initial Configuration Layer</div>
+              <div class="milestone-desc">First version of JSON/XML config for WP2 interfacing</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-1</div>
+              <div class="milestone-name">Preliminary Tudat/GOOD-WISE Integration</div>
+              <div class="milestone-desc">First working linkage between Tudat and GOOD-WISE pipeline</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4 · M4-1</div>
+              <div class="milestone-name">Governance Structure Defined</div>
+              <div class="milestone-desc">Steering committee and advisory board established</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2: Months 13–24 -->
+        <div class="timeline-col">
+          <div class="timeline-col-header">⬡ Phase II — Months 13–24</div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP1 · M1-2a</div>
+              <div class="milestone-name">Config Auto-generation (Preliminary)</div>
+              <div class="milestone-desc">System recommends settings by analogy with existing analyses</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-2a</div>
+              <div class="milestone-name">Data Models &amp; Workflows (Preliminary)</div>
+              <div class="milestone-desc">Complete preliminary data models for both WP2-2 and WP2-3</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP3 · M3-1a</div>
+              <div class="milestone-name">Mission-specific Models Implemented</div>
+              <div class="milestone-desc">Per-application models and interfaces validated</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4</div>
+              <div class="milestone-name">📋 Midterm Technical Review (MTR)</div>
+              <div class="milestone-desc">Hybrid event: assess weaknesses, set priorities for beta phase</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-3</div>
+              <div class="milestone-name">Automatic Analysis Updates Live</div>
+              <div class="milestone-desc">Platform auto-refreshes archived analyses with new data</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">All WPs</div>
+              <div class="milestone-name">🌐 GOOD Open Beta Launch</div>
+              <div class="milestone-desc">Platform publicly accessible; community testing begins</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot active"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4 · M4-2a</div>
+              <div class="milestone-name">Docs &amp; Forum Platform (Beta)</div>
+              <div class="milestone-desc">Issue tracker, documentation site, and open forum go live</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3: Months 25–36 -->
+        <div class="timeline-col">
+          <div class="timeline-col-header">⬡ Phase III — Months 25–36</div>
+
+          <div class="milestone">
+            <div class="milestone-dot final"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP1 · M1-1b / M1-2b</div>
+              <div class="milestone-name">Tudat Config Layer (Final)</div>
+              <div class="milestone-desc">Production-ready configuration system with full auto-generation</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot final"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-2b</div>
+              <div class="milestone-name">Data Models &amp; Workflows (Final)</div>
+              <div class="milestone-desc">Complete data models for spacecraft and natural bodies</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot final"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP3 · M3-2 / M3-3</div>
+              <div class="milestone-name">Infrastructure Documentation &amp; Demos</div>
+              <div class="milestone-desc">Full user &amp; developer docs; state-of-the-art demonstrated</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4</div>
+              <div class="milestone-name">🏛️ National Symposium (M4-3)</div>
+              <div class="milestone-desc">Dutch planetary &amp; citizen science communities engaged</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP4</div>
+              <div class="milestone-name">📐 Final Platform Review (FPR)</div>
+              <div class="milestone-desc">Hybrid review event; define post-project roadmap</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot final"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">WP2 · M2-2b</div>
+              <div class="milestone-name">GOOD-WISE Final Integration</div>
+              <div class="milestone-desc">Complete Tudat-WISE production integration</div>
+            </div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-dot event"></div>
+            <div class="milestone-content">
+              <div class="milestone-wp">All WPs</div>
+              <div class="milestone-name">🎯 GOOD Platform Full Launch</div>
+              <div class="milestone-desc">Production platform released to global community</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="components reveal">
-      <div class="component-card">
-        <div class="sub">TU Delft</div>
-        <h3>Tudat</h3>
-        <p>
-          The TU Delft Astrodynamics Toolbox: an open-source C++ / Python suite for
-          numerical propagation and estimation of spacecraft and natural solar system
-          bodies. Central to the TU Delft Spaceflight M.Sc. and ~40 peer-reviewed papers.
-        </p>
-        <p>
-          BSD 3-clause licensed, distributed as conda packages, with ~300 automated tests.
-        </p>
-        <a class="link" href="https://github.com/tudat-team/" target="_blank" rel="noopener">View on GitHub</a>
+    <!-- Legend -->
+    <div style="display:flex; gap: 2rem; margin-top: 2.5rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--sky);box-shadow:0 0 8px var(--sky);"></div>
+        <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);">Community Event</span>
       </div>
-
-      <div class="component-card">
-        <div class="sub">University of Groningen</div>
-        <h3>WISE</h3>
-        <p>
-          A scientific information system born from Astro-WISE, now underpinning the
-          NOVA Long Term Archive and the Euclid Data Processing System. Preserves
-          full data lineage in a rich data model — 2,500+ Euclid users today.
-        </p>
-        <p>
-          Hosted at OmegaCEN ASDC, part of the University of Groningen's data infrastructure.
-        </p>
-        <a class="link" href="https://www.astro-wise.org/" target="_blank" rel="noopener">About Astro-WISE</a>
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--aurora);box-shadow:0 0 8px var(--aurora);"></div>
+        <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);">Preliminary Milestone</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--orbit);box-shadow:0 0 8px var(--orbit);"></div>
+        <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);">Final Milestone</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <span class="label">04 — Applications</span>
-      </div>
-      <div>
-        <h2>From <span class="serif-italic">deep interiors</span> to debris orbits.</h2>
-        <p class="section-lead">
-          The same methodology — fitting data to dynamical models — connects planetary
-          science, fundamental physics, and space situational awareness. GOOD makes
-          that methodology shareable.
-        </p>
-      </div>
+<!-- ======================== TEAM ======================== -->
+<section class="section team-section" id="team">
+  <div class="section-inner">
+    <div class="section-label">People</div>
+    <h2 class="section-title">Built by a distributed<br>team of experts</h2>
+    <p class="section-lead">The GOOD team spans astrodynamics, radio science, astronomical data engineering, SSA, and software development across leading European institutions.</p>
+
+    <div class="team-tabs">
+      <button class="tab-btn active" data-tab="applicants">Lead Applicants</button>
+      <button class="tab-btn" data-tab="partners">Cooperation Partners</button>
     </div>
 
-    <div class="pillars reveal">
-      <div class="pillar">
-        <div class="pillar-num">α</div>
-        <h3>Planetary interiors</h3>
-        <p>Reproducible modelling of solar system body interior, origin, and evolution — including icy moon habitability.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">β</div>
-        <h3>Planetary defense</h3>
-        <p>Open estimation and prediction for Near-Earth Object impact monitoring and spacecraft conjunction analysis.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">γ</div>
-        <h3>Small bodies</h3>
-        <p>Large-scale analysis of Earth- and space-based data for asteroid evolution and fundamental physics tests.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">δ</div>
-        <h3>Citizen science</h3>
-        <p>Observation calibration, science-optimized data acquisition, and community-contributed datasets.</p>
-      </div>
+    <div class="team-grid" id="team-grid">
+      <!-- Populated by JavaScript -->
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <span class="label">05 — Up next</span>
+<!-- ======================== PARTNERS / ORGS ======================== -->
+<section class="section partners-section" id="partners">
+  <div class="section-inner">
+    <div class="section-label">Institutions</div>
+    <h2 class="section-title">A pan-European<br>collaboration</h2>
+    <p class="section-lead">GOOD connects institutions across the Netherlands and Europe, spanning universities, space agencies, and research centers.</p>
+
+    <div class="partners-grid">
+      <div class="partner-card reveal">
+        <div class="partner-abbr">TUD</div>
+        <div class="partner-name">Delft University of Technology</div>
+        <div class="partner-type">Lead Institution</div>
       </div>
-      <div>
-        <h2>Three years.<br><span class="serif-italic">Three releases.</span></h2>
-        <p class="section-lead">
-          Internal version after year one, open beta after year two, final platform after
-          year three. See the full milestone timeline.
-        </p>
-        <p style="margin-top: 2rem;">
-          <a href="{{ '/timeline/' | relative_url }}" class="link" style="font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber); border-bottom: 1px solid var(--amber); padding-bottom: 3px;">
-            View the full timeline →
-          </a>
-        </p>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">RUG</div>
+        <div class="partner-name">University of Groningen</div>
+        <div class="partner-type">Lead Institution</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">LU</div>
+        <div class="partner-name">Leiden University</div>
+        <div class="partner-type">Co-applicant</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">ESA</div>
+        <div class="partner-name">European Space Agency / ESTEC</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">DLR</div>
+        <div class="partner-name">Deutsches Zentrum für Luft- und Raumfahrt</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">JIVE</div>
+        <div class="partner-name">Joint Institute for VLBI ERIC</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">ROB</div>
+        <div class="partner-name">Royal Observatory of Belgium</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">UTAS</div>
+        <div class="partner-name">University of Tasmania</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">UniBW</div>
+        <div class="partner-name">Universität der Bundeswehr München</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">TNO</div>
+        <div class="partner-name">Nederlandse org. voor toegepast-natuur­wetenschappelijk onderzoek</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">eS</div>
+        <div class="partner-name">Netherlands eScience Center</div>
+        <div class="partner-type">Partner</div>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-abbr">CUT</div>
+        <div class="partner-name">Chalmers University of Technology</div>
+        <div class="partner-type">Partner</div>
       </div>
     </div>
   </div>

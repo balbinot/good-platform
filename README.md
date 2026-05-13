@@ -1,55 +1,65 @@
-# GOOD Platform — project website
+# GOOD Platform Website
 
-A Jekyll-based static site for **The General Open Orbital Dynamics (GOOD) Platform**, deployable directly to GitHub Pages.
+Jekyll-based GitHub Pages site for the **General Open Orbital Dynamics (GOOD) Platform**.
 
-## What's included
+## Quick Start
 
-- **Landing page** (`index.html`) — vision, problem, components (Tudat × WISE), applications, stats
-- **Timeline page** (`/timeline/`) — four work packages plus a 36-month milestone timeline
-- **Team page** (`/team/`) — applicants and 12 cooperation partners
-- **About page** (`/about/`) — full project background, access policy, governance, sustainability
+### Prerequisites
+- Ruby ≥ 3.0
+- Bundler (`gem install bundler`)
 
-## Local development
+### Local development
 
 ```bash
-# Install dependencies (once)
 bundle install
-
-# Serve locally
 bundle exec jekyll serve
-
-# Open http://localhost:4000
+# Visit http://localhost:4000
 ```
 
-Requires Ruby 3.x and Bundler. On macOS: `brew install ruby` then `gem install bundler`.
+### Deploy to GitHub Pages
 
-## Deploy to GitHub Pages
+1. Create a new GitHub repository (e.g. `good-platform`)
+2. Push all files to the `main` branch
+3. Go to **Settings → Pages**
+4. Set Source to **Deploy from a branch**, select `main` / `/ (root)`
+5. Your site will be live at `https://<username>.github.io/good-platform/`
 
-1. Create a new GitHub repository (e.g. `good-platform`).
-2. Push this directory to the `main` branch.
-3. In **Settings → Pages**, set the source to **Deploy from a branch** → `main` / `/ (root)`.
-4. (Optional) If you're deploying to `username.github.io/good-platform/` rather than a root domain, edit `_config.yml` and set `baseurl: "/good-platform"`.
+> **Tip:** If deploying to a project page (not user root), update `baseurl` in `_config.yml` to `/good-platform` (your repo name).
 
-GitHub will build and serve the site automatically. The included `Gemfile` pins to the `github-pages` gem, so what you see locally matches what GitHub builds.
+## Structure
 
-## Editing content
+```
+├── _config.yml          # Jekyll configuration
+├── _layouts/
+│   └── default.html     # Base HTML layout
+├── _includes/
+│   ├── nav.html         # Navigation bar
+│   └── footer.html      # Footer
+├── assets/
+│   ├── css/main.css     # All styles
+│   └── js/main.js       # Interactions & team rendering
+├── index.html           # Main landing page
+└── Gemfile
+```
 
-All content is driven by data files for easy updates:
+## Customizing
 
-- **Team members** → `_data/team.yml` (applicants + partners)
-- **Timeline milestones & work packages** → `_data/timeline.yml`
-- **Site metadata** (title, nav, project stats) → `_config.yml`
-- **Page copy** → `index.html`, `timeline/index.html`, `team/index.html`, `about/index.html`
+- **Content**: Edit `index.html` — all sections are self-contained with clear comments.
+- **Team data**: Edit the `teamData` object in `assets/js/main.js`.
+- **Colors/fonts**: CSS custom properties are at the top of `assets/css/main.css`.
+- **Config**: Update `_config.yml` with your institution's URL.
 
-To add a milestone, append an entry to `_data/timeline.yml` under `milestones:` — the timeline page will render it automatically.
+## Adding pages
 
-## Design notes
+Create new `.html` or `.md` files with front matter:
 
-- **Type**: Fraunces (display serif with variable axes), Inter Tight (body), JetBrains Mono (labels)
-- **Palette**: deep navy ink, paper cream, amber accent, signal red for reviews
-- **Aesthetic**: editorial / scientific — calm dense layouts, generous typography, subtle grain texture, animated orbital diagram in hero
-- **Accessibility**: semantic HTML, focus-visible outlines, reduced-motion respected, ARIA-hidden on decorative SVGs
+```yaml
+---
+layout: default
+title: Publications
+---
+```
 
 ## License
 
-The site code is released under the same license you choose for the GOOD project (default suggestion: MIT for the website; project software follows the licenses noted in the About page).
+GPL-3.0 — consistent with the GOOD platform software license.

@@ -1,0 +1,272 @@
+---
+layout: default
+title: "Home"
+description: "The General Open Orbital Dynamics platform — open-source astrodynamics meets rigorous data lineage."
+---
+
+<section class="hero" id="overview">
+  <div class="hero-orbit" aria-hidden="true">
+    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#0a1628" stroke-width="0.6">
+        <ellipse cx="300" cy="300" rx="280" ry="100" />
+        <ellipse cx="300" cy="300" rx="220" ry="160" transform="rotate(30 300 300)" />
+        <ellipse cx="300" cy="300" rx="180" ry="220" transform="rotate(60 300 300)" />
+        <ellipse cx="300" cy="300" rx="140" ry="260" transform="rotate(90 300 300)" />
+        <circle cx="300" cy="300" r="6" fill="#d97706" stroke="none" />
+        <circle cx="580" cy="300" r="3" fill="#0a1628" stroke="none" />
+        <circle cx="430" cy="430" r="2.5" fill="#0a1628" stroke="none" />
+        <circle cx="300" cy="80" r="3.5" fill="#b91c1c" stroke="none" />
+        <circle cx="140" cy="490" r="2" fill="#0a1628" stroke="none" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Open Science NL · Infrastructure 2024</span>
+        <h1>
+          The <span class="accent">General Open</span><br>
+          Orbital Dynamics<br>
+          Platform.
+        </h1>
+        <p class="hero-tag">
+          Combining the Tudat astrodynamics toolbox with WISE data-handling
+          technology — for fully transparent, reproducible orbital analysis.
+        </p>
+      </div>
+
+      <dl class="hero-meta">
+        <div>
+          <dt>Duration</dt>
+          <dd>{{ site.project.duration_months }} months</dd>
+        </div>
+        <div>
+          <dt>Budget</dt>
+          <dd>{{ site.project.budget }}</dd>
+        </div>
+        <div>
+          <dt>Lead</dt>
+          <dd>TU Delft</dd>
+        </div>
+        <div>
+          <dt>Partner</dt>
+          <dd>RU Groningen</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-value">4</div>
+        <div class="stat-label">Work packages</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Dedicated developers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">12+</div>
+        <div class="stat-label">Cooperation partners</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Application domains</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="vision">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="label">01 — Vision</span>
+      </div>
+      <div>
+        <h2>A paradigm shift toward<br><span class="serif-italic">open, reproducible</span> orbital analysis.</h2>
+        <p class="section-lead">
+          The GOOD platform transforms orbital dynamics from a closed field of fragmented,
+          domain-specific tools into an accessible, collaborative effort — supporting
+          professional scientists, engineers, and citizen scientists alike.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <div class="pillar-num">i.</div>
+        <h3>Run &amp; archive</h3>
+        <p>Execute new analyses on the platform — locally or via hosted compute — then validate and store them with full provenance.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">ii.</div>
+        <h3>Retrieve, reproducibly</h3>
+        <p>Pull existing analyses back — every input, configuration, and output reconstructable from persistent identifiers.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">iii.</div>
+        <h3>Auto-configure</h3>
+        <p>Generate skeleton analysis configurations from a few user inputs: target body, model accuracy, required datasets.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">iv.</div>
+        <h3>Stay current</h3>
+        <p>Archived analyses update automatically as new data and functionality become available — no user action needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="label">02 — Why now</span>
+      </div>
+      <div>
+        <h2>Closed tools, <span class="serif-italic">growing data</span>, urgent questions.</h2>
+        <p class="section-lead">
+          Orbital dynamics underpins planetary interior modelling, fundamental-physics tests,
+          spacecraft operations, and planetary defense. Yet the tools to do it are largely
+          closed-source — and the data is multiplying.
+        </p>
+      </div>
+    </div>
+
+    <div class="challenge-grid reveal">
+      <div class="challenge-block problem">
+        <h3>The problem</h3>
+        <ul>
+          <li><strong>Conflicting findings</strong> are difficult to resolve when underlying code is opaque.</li>
+          <li><strong>Unexpected results</strong> can't be independently validated by the broader community.</li>
+          <li><strong>Cross-domain collaboration</strong> is hindered by fragmented, domain-specific tools.</li>
+          <li><strong>Innovation is restricted</strong> by limited access to high-fidelity infrastructure.</li>
+        </ul>
+      </div>
+      <div class="challenge-block solution">
+        <h3>What's driving urgency</h3>
+        <ul>
+          <li><strong>Crowded near-Earth orbit</strong> demands FAIR, standardized space situational awareness.</li>
+          <li><strong>Planetary mission quantity &amp; quality</strong> require consistent fusion of multi-mission data.</li>
+          <li><strong>Asteroid data diversity</strong> from Gaia, LSST, Euclid, JWST and orbiters demands interoperable models.</li>
+          <li><strong>Strategic autonomy</strong> in Europe needs open alternatives to closed, centralised systems.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="label">03 — How it works</span>
+      </div>
+      <div>
+        <h2>Two proven systems,<br><span class="serif-italic">one open platform.</span></h2>
+        <p class="section-lead">
+          GOOD brings together Tudat's high-fidelity orbit propagation and estimation
+          with WISE's mature, lineage-preserving data infrastructure.
+        </p>
+      </div>
+    </div>
+
+    <div class="components reveal">
+      <div class="component-card">
+        <div class="sub">TU Delft</div>
+        <h3>Tudat</h3>
+        <p>
+          The TU Delft Astrodynamics Toolbox: an open-source C++ / Python suite for
+          numerical propagation and estimation of spacecraft and natural solar system
+          bodies. Central to the TU Delft Spaceflight M.Sc. and ~40 peer-reviewed papers.
+        </p>
+        <p>
+          BSD 3-clause licensed, distributed as conda packages, with ~300 automated tests.
+        </p>
+        <a class="link" href="https://github.com/tudat-team/" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="component-card">
+        <div class="sub">University of Groningen</div>
+        <h3>WISE</h3>
+        <p>
+          A scientific information system born from Astro-WISE, now underpinning the
+          NOVA Long Term Archive and the Euclid Data Processing System. Preserves
+          full data lineage in a rich data model — 2,500+ Euclid users today.
+        </p>
+        <p>
+          Hosted at OmegaCEN ASDC, part of the University of Groningen's data infrastructure.
+        </p>
+        <a class="link" href="https://www.astro-wise.org/" target="_blank" rel="noopener">About Astro-WISE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="label">04 — Applications</span>
+      </div>
+      <div>
+        <h2>From <span class="serif-italic">deep interiors</span> to debris orbits.</h2>
+        <p class="section-lead">
+          The same methodology — fitting data to dynamical models — connects planetary
+          science, fundamental physics, and space situational awareness. GOOD makes
+          that methodology shareable.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <div class="pillar-num">α</div>
+        <h3>Planetary interiors</h3>
+        <p>Reproducible modelling of solar system body interior, origin, and evolution — including icy moon habitability.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">β</div>
+        <h3>Planetary defense</h3>
+        <p>Open estimation and prediction for Near-Earth Object impact monitoring and spacecraft conjunction analysis.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">γ</div>
+        <h3>Small bodies</h3>
+        <p>Large-scale analysis of Earth- and space-based data for asteroid evolution and fundamental physics tests.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">δ</div>
+        <h3>Citizen science</h3>
+        <p>Observation calibration, science-optimized data acquisition, and community-contributed datasets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="label">05 — Up next</span>
+      </div>
+      <div>
+        <h2>Three years.<br><span class="serif-italic">Three releases.</span></h2>
+        <p class="section-lead">
+          Internal version after year one, open beta after year two, final platform after
+          year three. See the full milestone timeline.
+        </p>
+        <p style="margin-top: 2rem;">
+          <a href="{{ '/timeline/' | relative_url }}" class="link" style="font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber); border-bottom: 1px solid var(--amber); padding-bottom: 3px;">
+            View the full timeline →
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

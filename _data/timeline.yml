@@ -1,0 +1,109 @@
+work_packages:
+  - id: "WP1"
+    title: "Tudat Core Development"
+    color: "amber"
+    description: >-
+      Build a configuration layer for Tudat as an alternative to user-defined Python scripts,
+      implement configuration auto-generation, and adapt Tudat's architecture for integration
+      with GOOD-WISE.
+    sub_items:
+      - "WP1-1: Configuration layer (JSON/XML) with validation tools"
+      - "WP1-2: Configuration auto-generation from user inputs"
+      - "WP1-3: Architecture & interface adaptation (with TU Delft DCC support)"
+
+  - id: "WP2"
+    title: "GOOD-WISE Core Development"
+    color: "blue"
+    description: >-
+      Develop GOOD-WISE components — data models, workflows, and databases — by adapting
+      WISE technology from astronomical sky surveys to solar system applications.
+    sub_items:
+      - "WP2-1: Cross-application data models, workflows, databases"
+      - "WP2-2: Extensions for human-made objects (spacecraft, debris)"
+      - "WP2-3: Extensions for natural celestial bodies"
+
+  - id: "WP3"
+    title: "Topic-focussed Development"
+    color: "rose"
+    description: >-
+      Three parallel application streams, each extending Tudat's capabilities for a
+      specific community and demonstrating that the platform meets or exceeds the
+      current state of the art.
+    sub_items:
+      - "WP3-1: Near-Earth Space Situational Awareness"
+      - "WP3-2: Solar System Dynamics"
+      - "WP3-3: Spacecraft Radio Tracking"
+
+  - id: "WP4"
+    title: "Dissemination, Outreach & Management"
+    color: "emerald"
+    description: >-
+      Define governance, build documentation and an open community forum, present at
+      conferences, and engage Dutch planetary and citizen science communities through
+      a national symposium.
+    sub_items:
+      - "Governance structure definition (M4-1)"
+      - "Documentation, issue tracking, open forum (M4-2)"
+      - "National symposium for Dutch communities (M4-3)"
+      - "Conference presentations & training sessions"
+
+milestones:
+  - month: 0
+    label: "Kick-off"
+    code: "KO"
+    type: "review"
+    description: "Open kick-off meeting engaging the community in shaping project scope and priorities."
+
+  - month: 3
+    label: "Scope Definition"
+    code: "M1-0 / M2-0 / M3-0"
+    type: "milestone"
+    description: "Initial scope and implementation details defined across WP1, WP2, and WP3."
+
+  - month: 9
+    label: "Initial Tudat Config Layer"
+    code: "M1-1a"
+    type: "milestone"
+    description: "First version of Tudat configuration layer ready for WP2 interfacing."
+
+  - month: 12
+    label: "GOOD Internal Version"
+    code: "★"
+    type: "release"
+    description: "Minimal system ready for internal testing. First Tudat / GOOD-WISE integration (M2-1)."
+
+  - month: 18
+    label: "Auto-generation Preliminary"
+    code: "M1-2a"
+    type: "milestone"
+    description: "Preliminary version of configuration auto-generation finished before MTR."
+
+  - month: 21
+    label: "Midterm Technical Review"
+    code: "MTR"
+    type: "review"
+    description: "Three months before beta. Assesses system weaknesses, defines priorities."
+
+  - month: 24
+    label: "GOOD Open Beta"
+    code: "★"
+    type: "release"
+    description: "Public open beta release. Data models complete (M2-2a). Documentation and forum live (M4-2)."
+
+  - month: 30
+    label: "Automatic Updates"
+    code: "M2-3"
+    type: "milestone"
+    description: "Implementation of automatic analysis updates when new data or functionality arrives."
+
+  - month: 33
+    label: "Final Platform Review"
+    code: "FPR"
+    type: "review"
+    description: "Three months before final launch. Defines roadmap during and beyond the project."
+
+  - month: 36
+    label: "GOOD Final Release"
+    code: "★"
+    type: "release"
+    description: "Final platform launch. State-of-the-art demonstration complete (M3-3). All work packages finalised."

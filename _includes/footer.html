@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-mark">The GOOD Platform</div>
+        <p>
+          A 36-month open-science infrastructure project combining open-source astrodynamics
+          with rigorous data lineage — for planetary science, space situational awareness,
+          and planetary defense.
+        </p>
+        <p style="margin-top: 1rem;">
+          Funded under {{ site.project.call }}.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          {% for item in site.nav %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Related software</h4>
+        <ul>
+          <li><a href="https://github.com/tudat-team/" target="_blank" rel="noopener">Tudat on GitHub</a></li>
+          <li><a href="https://docs.tudat.space/en/latest/" target="_blank" rel="noopener">Tudat documentation</a></li>
+          <li><a href="https://www.astro-wise.org/" target="_blank" rel="noopener">Astro-WISE</a></li>
+          <li><a href="https://www.omegacen.rug.nl/" target="_blank" rel="noopener">OmegaCEN ASDC</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {{ 'now' | date: '%Y' }} GOOD Platform Consortium</span>
+      <span>TU Delft × University of Groningen</span>
+    </div>
+  </div>
+</footer>

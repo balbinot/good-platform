@@ -1,0 +1,13 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <span class="dot"></span>
+      <span>GOOD<span class="serif-italic" style="color: var(--amber); margin-left: 2px;">.</span></span>
+    </a>
+    <ul class="nav-links">
+      {% for item in site.nav %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

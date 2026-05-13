@@ -1,0 +1,99 @@
+---
+layout: default
+title: "Timeline"
+permalink: /timeline/
+description: "36-month project timeline with work packages, milestones, and release schedule."
+---
+
+<section class="timeline-hero">
+  <div class="container">
+    <span class="eyebrow">Project plan · 36 months</span>
+    <h1>Timeline &amp; <span class="serif-italic" style="color: var(--amber);">milestones</span></h1>
+    <p class="lead">
+      Three years of structured development across four work packages — punctuated by an
+      open kick-off, a midterm technical review, an open beta, and a final platform review.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 2rem;">
+  <div class="container">
+    <span class="label" style="font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);">
+      <span style="color: var(--amber);">§</span> Work packages
+    </span>
+    <h2 style="margin-top: 1rem; margin-bottom: 1rem;">Four parallel streams.</h2>
+    <p class="section-lead" style="max-width: 60ch;">
+      One on core astrodynamics, one on data infrastructure, three application-focused
+      teams, plus dissemination and governance — all running concurrently with tight
+      coordination.
+    </p>
+
+    <div class="wp-grid">
+      {% for wp in site.data.timeline.work_packages %}
+        <div class="wp-card {{ wp.color }} reveal">
+          <span class="id">{{ wp.id }}</span>
+          <h3>{{ wp.title }}</h3>
+          <p>{{ wp.description }}</p>
+          <ul>
+            {% for item in wp.sub_items %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="label" style="font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);">
+      <span style="color: var(--amber);">§</span> Milestones
+    </span>
+    <h2 style="margin-top: 1rem;">From kick-off<br>to <span class="serif-italic" style="color: var(--amber);">final release.</span></h2>
+
+    <div class="timeline-track">
+      <div class="timeline-axis" aria-hidden="true"></div>
+
+      {% for ms in site.data.timeline.milestones %}
+        <div class="tl-item {{ ms.type }} reveal">
+          <div class="tl-month">
+            <strong>M{{ ms.month }}</strong>
+            <span>Month {{ ms.month }}</span>
+          </div>
+          <div class="tl-marker">
+            <span class="dot"></span>
+          </div>
+          <div class="tl-card {{ ms.type }}">
+            <div class="tl-meta">
+              <span class="month-mobile">Month {{ ms.month }} · </span>
+              <span>{{ ms.code }}</span>
+              {% if ms.type == 'release' %}
+                <span style="color: var(--amber);">· Release</span>
+              {% elsif ms.type == 'review' %}
+                <span style="color: var(--signal);">· Review</span>
+              {% endif %}
+            </div>
+            <h3>{{ ms.label }}</h3>
+            <p>{{ ms.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="label" style="font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);">
+      <span style="color: var(--amber);">§</span> Beyond the project
+    </span>
+    <h2 style="margin-top: 1rem;">Built to <span class="serif-italic">last.</span></h2>
+    <p class="section-lead" style="max-width: 65ch;">
+      Tudat is a TU Delft 'laboratory facility' with dedicated maintenance funding since 2023.
+      WISE is anticipated to be maintained by Euclid funding until at least 2033. Together
+      with 0.5 FTE post-project commitment from OmegaCEN and a fee structure for industrial
+      users, GOOD has a sustainability plan that outlives the grant.
+    </p>
+  </div>
+</section>

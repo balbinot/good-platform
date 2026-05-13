@@ -1,6 +1,6 @@
 title: GOOD Platform
 description: The General Open Orbital Dynamics Platform — Open, FAIR, and reproducible orbital dynamics for the global scientific community.
-baseurl: ""
+baseurl: "good-platform/"
 url: ""
 
 # Build settings

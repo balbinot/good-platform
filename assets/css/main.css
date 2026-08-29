@@ -535,6 +535,18 @@ body::before {
 
 .architecture-arrow { align-self: center; color: var(--aurora); font-family: var(--font-mono); font-size: 1.5rem; }
 
+.proposal-figure {
+  max-width: 940px;
+  margin: 0 auto 4.5rem;
+  padding: 0.85rem;
+  background: #fff;
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+}
+
+.proposal-figure img { width: 100%; height: auto; }
+.proposal-figure figcaption { padding: 0.95rem 0.35rem 0.15rem; color: var(--text-secondary); font-size: 0.85rem; font-style: italic; }
+
 .requirements-intro {
   display: flex;
   align-items: end;

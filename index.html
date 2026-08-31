@@ -19,7 +19,7 @@ description: The General Open Orbital Dynamics (GOOD) Platform — Open, FAIR, a
   </div>
 
   <div class="hero-content">
-    <div class="hero-tag">Open Science Infrastructure 2024</div>
+    <div class="hero-tag">Open Science Infrastructure</div>
     <h1 class="hero-title">
       General <span class="accent">Open</span><br>
       Orbital <span class="accent-2">Dynamics</span><br>
@@ -117,6 +117,76 @@ description: The General Open Orbital Dynamics (GOOD) Platform — Open, FAIR, a
           <p><strong>Automatic updates</strong> — archived analyses are refreshed when new data or software improvements become available</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ARCHITECTURE & REQUIREMENTS ======================== -->
+<section class="section architecture-section" id="architecture">
+  <div class="section-inner">
+    <div class="section-label">The Platform</div>
+    <h2 class="section-title">From data to a reproducible<br>orbital-dynamics result</h2>
+    <p class="section-lead">GOOD joins high-fidelity numerical analysis with scalable, traceable data handling. Every analysis is designed to remain inspectable, repeatable, and reusable.</p>
+
+    <div class="architecture-flow reveal" aria-label="Conceptual GOOD system architecture">
+      <div class="architecture-node architecture-node-input">
+        <span class="architecture-kicker">Input</span>
+        <strong>Data &amp; analysis intent</strong>
+        <span>Tracking data, survey archives, models, and user requirements</span>
+      </div>
+      <div class="architecture-arrow" aria-hidden="true">→</div>
+      <div class="architecture-node architecture-node-core">
+        <span class="architecture-kicker">GOOD</span>
+        <strong>Configuration &amp; workflows</strong>
+        <span>Validated configurations, orchestration, provenance, and persistent identifiers</span>
+      </div>
+      <div class="architecture-arrow" aria-hidden="true">→</div>
+      <div class="architecture-node architecture-node-engine">
+        <span class="architecture-kicker">Tudat + GOOD-WISE</span>
+        <strong>Propagation &amp; estimation</strong>
+        <span>High-fidelity dynamics, scalable data handling, and reproducible execution</span>
+      </div>
+      <div class="architecture-arrow" aria-hidden="true">→</div>
+      <div class="architecture-node architecture-node-output">
+        <span class="architecture-kicker">Output</span>
+        <strong>Open analysis package</strong>
+        <span>Results, inputs, settings, code versions, and processing history</span>
+      </div>
+    </div>
+
+    <figure class="proposal-figure reveal">
+      <img src="{{ '/assets/images/good-fair-open-figure-2.png' | relative_url }}" alt="Figure 2 from the GOOD proposal, comparing the current closed workflow with the proposed open GOOD platform connecting data acquisition, analysis, applications, Tudat, and GOOD-WISE.">
+      <figcaption>Figure 2: GOOD: FAIR and open linking data and applications</figcaption>
+    </figure>
+
+    <div class="requirements-intro">
+      <div>
+        <div class="section-label">Top-level requirements</div>
+        <h3>Open by design, useful in practice</h3>
+      </div>
+      <p>These commitments guide the platform’s development across planetary science, space situational awareness, and related applications.</p>
+    </div>
+    <div class="requirements-grid">
+      <article class="requirement-card reveal">
+        <span class="requirement-number">01</span>
+        <h4>Reproducible analyses</h4>
+        <p>Package data, configurations, software versions, processing history, and outputs so analyses can be rerun and examined.</p>
+      </article>
+      <article class="requirement-card reveal">
+        <span class="requirement-number">02</span>
+        <h4>FAIR &amp; interoperable</h4>
+        <p>Use persistent identifiers and established standards where possible, with translation layers for external tools and formats.</p>
+      </article>
+      <article class="requirement-card reveal">
+        <span class="requirement-number">03</span>
+        <h4>Scalable &amp; traceable</h4>
+        <p>Support large and diverse datasets while preserving complete lineage from source data to published result.</p>
+      </article>
+      <article class="requirement-card reveal">
+        <span class="requirement-number">04</span>
+        <h4>Accessible &amp; extensible</h4>
+        <p>Serve users through web and terminal interfaces, open documentation, and reusable configurations that can grow with the community.</p>
+      </article>
     </div>
   </div>
 </section>
